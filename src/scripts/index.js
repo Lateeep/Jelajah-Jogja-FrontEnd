@@ -1,0 +1,1 @@
+import './views/templates/Footer.js';
