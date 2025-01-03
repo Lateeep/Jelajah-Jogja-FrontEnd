@@ -5,13 +5,13 @@ class Navbar extends HTMLElement {
   
     connectedCallback() {
       this.render();
+      this.addScrollEffect();
     }
   
     render() {
       this.innerHTML = `
         <nav
           class="navbar navbar-expand-lg fixed-top p-3"
-          style="background-color: #3F4E4F opacity:0%; z-index:5000"
         >
           <div class="container">
             <a class="logo" href="#"
@@ -81,6 +81,17 @@ class Navbar extends HTMLElement {
           </div>
         </nav>
       `;
+    }
+    
+    addScrollEffect() {
+      const navbar = this.querySelector('.navbar');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
     }
   }
   

@@ -1,3 +1,12 @@
+.navbar {
+    background-color: rgba(63, 78, 79, 0);
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .navbar.scrolled {
+    background-color: rgba(63, 78, 79, 1);
+  }
+
 .navbar .navbar-nav {
     gap: 10px;
   }
