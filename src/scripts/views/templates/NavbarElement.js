@@ -11,11 +11,11 @@ class Navbar extends HTMLElement {
       this.innerHTML = `
         <nav
           class="navbar navbar-expand-lg fixed-top p-3"
-          style="background-color: #3F4E4F; z-index:5000"
+          style="background-color: #3F4E4F opacity:0%; z-index:5000"
         >
           <div class="container">
             <a class="logo" href="#"
-              ><img style="width:140px;" src="./images/Logonavbar.png"
+              ><img style="width:140px;" src="../public/images/Logo-Jelajah-Jogja.png"
             /></a>
             <button
               class="navbar-toggler border-0 shadow-none"
